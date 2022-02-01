@@ -11,3 +11,28 @@ $$
 \end{align}\tag{1}
 $$
 Also, 
+$$
+\begin{align}
+[Z, X] = ZX-XZ &= \begin{pmatrix}
+1 & 0\\ 0 &-1
+\end{pmatrix}\begin{pmatrix}
+0 & 1\\ 1 &0
+\end{pmatrix} - \begin{pmatrix}
+0 & 1\\ 1 &0
+\end{pmatrix}\begin{pmatrix}
+1 & 0\\ 0 &-1
+\end{pmatrix} \\ 
+
+&= \begin{pmatrix}
+0 & 1\\ -1 & 0
+\end{pmatrix} - \begin{pmatrix}
+0 & -1\\ 1 & 0
+\end{pmatrix} \\
+
+&= 2\begin{pmatrix}
+0 & 1\\ -1 & 0
+\end{pmatrix} = 2i\begin{pmatrix}
+0 & -i\\ i & 0
+\end{pmatrix} = 2iY
+\end{align}\tag{2}
+$$
