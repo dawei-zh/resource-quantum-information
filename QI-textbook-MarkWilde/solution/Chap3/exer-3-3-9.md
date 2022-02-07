@@ -68,4 +68,42 @@ From eq. $\eqref{3}$ and eq. $\eqref{4}$, we have
 $$
 H = |0\rangle\langle + | + |1\rangle \langle -| = |+\rangle\langle 0 | + |-\rangle \langle 1|  \tag{5}
 $$
- 
+
+---
+
+We can also prove the identity without the matrix form of Hadmard gate. The Hadmard gate can take $|+\rangle$ and $|-\rangle$ into $|0\rangle$ and $|1\rangle$, respectively. The definition of Hadmard gate
+$$
+H = |0\rangle\langle + | + |1\rangle \langle -|\tag{6}
+$$
+satisfies the definition, 
+$$
+\begin{align}
+H|+\rangle &= |0\rangle\langle + |+\rangle + |1\rangle \langle -|+\rangle = |0\rangle\\
+H|-\rangle &= |0\rangle\langle + |-\rangle + |1\rangle \langle -|-\rangle = |1\rangle
+\end{align}\tag{7}\label{7}
+$$
+For $|+\rangle\langle 0| + |-\rangle\langle 1|$, note that $|0\rangle = (|+\rangle+|-\rangle)/\sqrt{2}$ and $|1\rangle = (|+\rangle-|-\rangle)/\sqrt{2}$, we have
+$$
+\begin{align}
+(|+\rangle\langle 0| + |-\rangle\langle 1|)|+\rangle &= |+\rangle\langle 0|+\rangle + |-\rangle\langle 1|+\rangle \\
+&= \frac{1}{\sqrt{2}}|+\rangle(\langle +|+\langle -|)|+\rangle + \frac{1}{\sqrt{2}}|-\rangle(\langle +|-\langle -|)|+\rangle \\
+&= \frac{1}{\sqrt{2}}(|+\rangle\langle +|+\rangle+|+\rangle\langle -|+\rangle+|-\rangle\langle +|+\rangle - |-\rangle\langle -|+\rangle ) \\
+&= \frac{1}{\sqrt{2}}(|+\rangle+|-\rangle) = |0\rangle 
+\end{align}\tag{8}\label{8}
+$$
+Also, 
+$$
+\begin{align}
+(|+\rangle\langle 0| + |-\rangle\langle 1|)|-\rangle &= |+\rangle\langle 0|-\rangle + |-\rangle\langle 1|-\rangle \\
+&= \frac{1}{\sqrt{2}}|+\rangle(\langle +|+\langle -|)|-\rangle + \frac{1}{\sqrt{2}}|-\rangle(\langle +|-\langle -|)|-\rangle \\
+&= \frac{1}{\sqrt{2}}(|+\rangle\langle +|-\rangle+|
++\rangle\langle -|-\rangle
++|-\rangle\langle +|-\rangle 
+-|-\rangle\langle -|-\rangle ) \\
+&= \frac{1}{\sqrt{2}}(|+\rangle-|-\rangle) = |1\rangle 
+\end{align}\tag{9}\label{9}
+$$
+From eq. $\eqref{7}-\eqref{9}$, we conclude that
+$$
+H = |0\rangle\langle + | + |1\rangle \langle -| = |+\rangle\langle 0 | + |-\rangle \langle 1|  \tag{10}
+$$
